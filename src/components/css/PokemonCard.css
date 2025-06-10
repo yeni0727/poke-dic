@@ -23,6 +23,7 @@
 
 .delete:hover {
    background-color: #ff4757;
+   font-weight: bold;
 }
 
 .pokemon-card.disabled {

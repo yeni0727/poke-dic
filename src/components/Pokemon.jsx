@@ -9,7 +9,7 @@ const Pokemon = () => {
    const [pokemons, setPoke] = useState([
       { id: 1, name: '내루미', img: '/images/내루미.png', disabled: false },
       { id: 2, name: '메타몽', img: '/images/메타몽.png', disabled: false },
-      { id: 3, name: '파이리', img: '/images/파이리.png', disabled: false },
+      { id: 3, name: '플라베베', img: '/images/플라베베.png', disabled: false },
    ])
 
    const [inputName, setInputName] = useState('')
