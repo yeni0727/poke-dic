@@ -24,8 +24,9 @@ const Pokemon = () => {
          alert('포켓몬 이름을 입력해주세요')
          return
       }
-      setPoke((prevPokes) =>
-         prevPokes.concat({
+
+      setPoke((nextPokes) =>
+         nextPokes.concat({
             id: nextId,
             name: inputName,
             img: `/images/${inputName}.png`,
@@ -33,16 +34,16 @@ const Pokemon = () => {
          })
       )
 
-      setNextId((prevId) => prevId + 1)
+      setNextId((nextId) => nextId + 1)
       setInputName('')
    }, [inputName, nextId])
 
    const onToggle = useCallback((id) => {
-      setPoke((prevPokes) => prevPokes.map((poke) => (poke.id === id ? { ...poke, disabled: !poke.disabled } : poke)))
+      setPoke((nextPokes) => nextPokes.map((poke) => (poke.id === id ? { ...poke, disabled: !poke.disabled } : poke)))
    }, [])
 
    const onRemove = useCallback((id) => {
-      setPoke((prevPokes) => prevPokes.filter((poke) => poke.id !== id))
+      setPoke((nextPokes) => nextPokes.filter((poke) => poke.id !== id))
    }, [])
 
    const pokesList = pokemons.map((poke) => <PokemonCard key={poke.id} poke={poke} onToggle={onToggle} onRemove={onRemove} />)
@@ -50,7 +51,6 @@ const Pokemon = () => {
    return (
       <>
          <SiPokemon className="logo" />
-
          <h2>
             포켓몬 도감 <MdOutlineCatchingPokemon />
          </h2>
