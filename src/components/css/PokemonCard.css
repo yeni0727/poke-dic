@@ -1,0 +1,38 @@
+.pokemon-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 15px;
+   margin: 10px;
+   border: 2px solid #f0f78d;
+   border-radius: 10px;
+   cursor: pointer;
+   color: #f0f78d;
+}
+
+.delete {
+   background-color: #f0f78d;
+   color: black;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 10px;
+   font-size: 14px;
+}
+
+.delete:hover {
+   background-color: #ff4757;
+}
+
+.pokemon-card.disabled {
+   border-color: darkgray;
+}
+
+.disabled-text {
+   color: darkgray;
+}
+
+.grayscale {
+   filter: grayscale(100%);
+}
