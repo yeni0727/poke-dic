@@ -36,7 +36,7 @@ const Pokemon = () => {
 
       setNextId((nextId) => nextId + 1)
       setInputName('')
-   }, [inputName, nextId])
+   }, [nextId, inputName])
 
    const onToggle = useCallback((id) => {
       setPoke((nextPokes) => nextPokes.map((poke) => (poke.id === id ? { ...poke, disabled: !poke.disabled } : poke)))
