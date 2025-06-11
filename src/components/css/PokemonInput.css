@@ -1,8 +1,8 @@
-.input-container {
+.search {
    text-align: center;
 }
 
-.input-container input {
+.search input {
    padding: 12px 300px;
    font-size: 16px;
    border: 2px solid rgb(100, 100, 100);
@@ -11,7 +11,7 @@
    width: 200px;
 }
 
-.input-container > button {
+.search > button {
    padding: 12px 20px;
    font-size: 16px;
    background-color: #f0f78d;
@@ -22,6 +22,6 @@
    cursor: pointer;
 }
 
-.input-container > button:hover {
+.search > button:hover {
    background-color: #ff4767;
 }
