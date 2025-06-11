@@ -6,7 +6,7 @@ const PokemonCard = ({ poke, onToggle, onRemove }) => {
    return (
       <li>
          <div className={`pokemon-card ${poke.disabled ? 'disabled' : ''}`} onDoubleClick={() => onToggle(poke.id)}>
-            <img src={poke.img} alt={poke.name} width="180" className={poke.disabled ? 'grayscale' : ''} />
+            <img src={poke.img} alt={poke.name} className={poke.disabled ? 'grayscale' : ''} width="180" />
 
             <p className={poke.disabled ? 'disabled-text' : ''}>{poke.name}</p>
 
